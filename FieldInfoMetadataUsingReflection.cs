@@ -21,7 +21,7 @@ static class PivotFieldInfoHelper
         // this is for DateTimePropertyFieldInfo
         if (propertyInfoField is IPivotFieldInfo)
         {
-			// Recursive call
+            // Recursive call
             return (propertyInfoField as IPivotFieldInfo).GetAttributeUsingReflection<TAtt>();
         }
 

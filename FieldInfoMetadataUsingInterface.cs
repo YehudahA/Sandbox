@@ -14,8 +14,8 @@ static class PivotFieldInfoHelper
         if (fieldInfo is IPivotFieldSourceFieldInfo)
         {
             IPivotFieldInfo innerFieldInfo = (fieldInfo as IPivotFieldSourceFieldInfo).FieldInfo;
-			
-			// Recursive call
+
+            // Recursive call
             return innerFieldInfo.GetAttributeUsingInterface<TAtt>();
         }
 
